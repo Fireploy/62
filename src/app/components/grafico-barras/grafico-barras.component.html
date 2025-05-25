@@ -1,0 +1,17 @@
+<div class="chart-container" *ngIf="juegosCargados">
+  <ngx-charts-bar-horizontal 
+    [scheme]="colorScheme"
+    [results]="juegos"
+    [gradient]="gradient"
+    [xAxis]="showXAxis"
+    [yAxis]="showYAxis"
+    [legend]="showLegend"
+    [showXAxisLabel]="showXAxisLabel"
+    [showYAxisLabel]="showYAxisLabel"
+    [xAxisLabel]="xAxisLabel"
+    [yAxisLabel]="yAxisLabel"
+    (select)="onSelect($event)"
+    style="fill: azure"
+  >
+  </ngx-charts-bar-horizontal>
+</div>
